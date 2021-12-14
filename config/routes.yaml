@@ -1,0 +1,7 @@
+index:
+    path: /
+    controller: App\Controller\MainController::index
+
+findCards:
+    path: /find-cards
+    controller: App\Controller\MainController::findCards    
