@@ -18,7 +18,7 @@ class MainController extends AbstractController
         $partnerLocators = $doctrine->getRepository(PartnerLocator::class)->createQueryBuilder('pl')->getQuery()->getArrayResult();
         $partnerLocators = json_encode($partnerLocators, JSON_UNESCAPED_UNICODE);
 
-        $type = 'Type';
+        $type = 'Type 1';
 
         return $this->render('main.html.twig', ['allStatuses' => $allStatuses, 'partnerLocators' => $partnerLocators, 'type' => $type]);
     }
